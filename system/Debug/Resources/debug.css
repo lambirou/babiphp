@@ -1,0 +1,168 @@
+.bp---debug {
+    margin: 0;
+    margin-bottom: 7.5px;
+    font: normal normal 12px/18px Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
+    color: #333;
+}
+
+.db---input {
+    padding: 2px 7px 3px 4px;
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+    background-color: #333;
+    background-image: -webkit-linear-gradient(top, #444, #333);
+    background-image: linear-gradient(top, #444, #333);
+    border-radius: 4px 4px 0 0;
+}
+
+.db---output {
+    display: block;
+    margin: 0;
+    padding: 3px 0;
+    padding-left: 7.5px;
+    background: #f9f9f9;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    border-bottom: 0;
+    box-shadow: inset 0px 4px 4px #f3f3f3, inset 0px -8px 8px #fff;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.db---output pre {
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+.db---output .code-highlight {
+    margin: 0;
+    border: none;
+    direction: ltr;
+    color: #333;
+    max-height: 400px;
+    overflow: auto;
+    text-transform: none;
+}
+
+.db---info {
+    padding: 2px 5px;
+    background: #ECECEC;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    color: #808080;
+    border-radius: 0 0 4px 4px;
+}
+
+.db---info-left {
+    display: inline-block;
+    width: auto;
+}
+
+.db---info-right {
+    float: right;
+    text-align: right;
+}
+
+
+/* badge */
+
+.db---badge {
+    display: inline-block;
+    padding: 1px 4px;
+    white-space: pre;
+    background-color: #eee;
+    color: #fff;
+    font: bold 11px Helvetica, Arial;
+    text-shadow: inherit;
+    border-radius: 2px;
+}
+
+.db---badge.null,
+.db---badge.unknown {
+    background-color: #eee;
+    color: #999;
+}
+
+.db---badge.true {
+    background-color: #339900;
+}
+
+.db---badge.false {
+    background-color: #CC0033;
+}
+
+.db---badge.match {
+    background-color: #d78035;
+}
+
+.db---badge.ressource {
+    background-color: #0057ae;
+}
+
+
+/* misc */
+
+.db---numeric {
+    color: #0099CC;
+}
+
+.db---numeric,
+.db---badge,
+.db---mode,
+.db---name {
+    cursor: help;
+}
+
+.db---string {
+    background: #e8f0e1;
+    color: #669933;
+    padding: 3px 1px;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.db---mode {
+    display: inline-block;
+    margin: 0 2px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 15px;
+    font: bold 11px Helvetica, Arial;
+    text-shadow: none;
+    color: #fff;
+    background: transparent;
+}
+
+.db---mode.cloneable {
+    background: #bdd7d1;
+}
+
+.db---mode.iterable {
+    background: #d5dea5;
+}
+
+.db---mode.interface {
+    background: #baed78;
+}
+
+.db---mode.abstract {
+    background: #baed78;
+}
+
+.db---mode.final {
+    background: #78bded;
+}
+
+.db---name {
+    color: inherit;
+    border-bottom: 1px dotted transparent;
+    border-color: inherit;
+}

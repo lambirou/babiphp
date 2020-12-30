@@ -1,0 +1,45 @@
+@mixin border-radius($radius) {
+        -webkit-border-radius: $radius;
+           -moz-border-radius: $radius;
+            -ms-border-radius: $radius;
+                border-radius: $radius;
+}
+
+@mixin box-shadow($args) {
+    -webkit-box-shadow: $args;
+       -moz-box-shadow: $args;
+        -ms-box-shadow: $args;
+         -o-box-shadow: $args;
+            box-shadow: $args;
+}
+
+@mixin linear-gradient($color1, $color2) {
+    background: $color1;
+    background: -webkit-linear-gradient( $color1, $color2);
+    background: -moz-linear-gradient( $color1, $color2);
+    background: -ms-linear-gradient( $color1, $color2);
+    background: -o-linear-gradient( $color1, $color2);
+    background: linear-gradient( $color1, $color2);
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+       -moz-transition: $args;
+        -ms-transition: $args;
+         -o-transition: $args;
+            transition: $args;
+}
+
+@mixin circle($size){
+    width: $size;
+    height: $size;
+    line-height: $size;
+    @include border-radius($size);
+    text-align: center;
+}

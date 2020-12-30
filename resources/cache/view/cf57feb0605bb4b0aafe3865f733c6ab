@@ -1,0 +1,10 @@
+<div class="container">
+
+	<h3><?php echo e($post['title']); ?></h3>
+	<p><?php echo e($post['content']); ?></p>
+	<p><?php echo e($post['date']); ?></p>
+
+	<a href="<?php echo e(url()); ?>">
+		<< Go Back</a>
+
+</div>

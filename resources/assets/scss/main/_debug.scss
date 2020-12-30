@@ -1,0 +1,141 @@
+
+._bp-debug-bar{
+	display: block; 
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	font-family: $font-family;
+	font-size: $font-size;
+	width: 100%;
+	height: $bar-height - 5; 
+	line-height: $bar-height - 5;
+	z-index: $max-z-index;
+	background: $light-soft-color;
+	color: $dark-color;
+	border-top: 2px solid $main-color;
+	border-bottom: 1px solid #d8d8d8;
+	box-sizing: border-box;
+
+	._item {
+		display: inline-block;
+		border-right: 1px solid #d8d8d8;
+		padding: 0 7px;
+
+		&.first {
+			// border-right: 0;
+			border-left: 1px solid #d8d8d8;
+		}
+		&.last {
+			padding: 0;
+		}
+		&.clickable {
+			cursor: pointer;
+			@include transition(background linear .3s);
+
+			&:hover {
+				background: darken($light-soft-color, 10%);
+			}
+		}
+	}
+	._bp-bar-it{
+		cursor: pointer;
+		font-style: italic;
+	}
+	._bp-bar-badge{
+		cursor: pointer;
+		font-size: $font-size - 1;
+		background-color: darken($grey-color, 30%);
+		color: $white-color;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		min-width: 10px;
+		padding: 2px 5px;
+		@include border-radius(10px);
+	}
+	._bp-bar-badge-info{
+		background-color: $main-soft-color;
+	}
+	._bp-bar-badge-success{
+		background-color: $green-color;
+	}
+	._bp-bar-badge-error{
+		background-color: $red-color;
+	}
+	._bp-bar-badge-warning{
+		background-color: $orange-color;
+	}
+	._bp-bar-divider{
+		width: 1px;
+		overflow: hidden;
+		margin: 0 5px;
+		background-color: $grey-color;
+	}
+	._bp-toggle-btn {
+		cursor: pointer;
+		display: inline-block;
+		margin-left: 30px;
+		text-align: center;
+
+		span {
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 10px;
+			right: 7px;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid $dark-color;
+			font-size: 0;
+			line-height: 0;
+			opacity: 0.5;
+			@include transition(opacity linear .3s);
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&.opened {
+			span {
+				border-width: 0;
+				border-color: transparent;
+				position: absolute;
+				right: 15px;
+				top: 7px;
+				width: 15px;
+				height: 15px;
+
+				&:before, &:after {
+					position: absolute;
+					left: 15px;
+					content: ' ';
+					height: 16px;
+					width: 3px;
+					background-color: $dark-color;
+				}
+				&:before {
+					transform: rotate(45deg);
+				}
+				&:after {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+._bp-debug-bar-sup{
+	height: $bar-height;
+	width: 100%;
+}
+
+._bp-debug-content {
+	position: fixed;
+	bottom: 0;
+	z-index: $max-z-index;
+	background: $light-soft-color;
+	font-family: $font-family;
+	font-size: $font-size;
+	width: 100%;
+	height: 0;
+}
