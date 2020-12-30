@@ -1,16 +1,4 @@
-<p align="center"><img src="https://babiphp.github.io/assets/img/logo-babiphp-text-banner.png" height="100"></p>
-
-<p align="center">The flexible PHP Framework</p>
-
-<p align="center">
-<a href="https://twitter.com/lambirou225"><img src="https://img.shields.io/badge/author-@lambirou225-blue.svg?style=flat-square" alt="Author"></a>
-<a href="https://github.com/babiphp/babiphp/blob/master/docs/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></a>
-<a href="https://packagist.org/packages/babiphp/babiphp"><img src="https://img.shields.io/packagist/v/babiphp/babiphp.svg?style=flat-square" alt="Packagist Version"></a>
-<a href="https://babiphp.github.io/babiphp"><img src="https://poser.pugx.org/babiphp/babiphp/v/stable.svg?style=flat-square" alt="Latest Stable Version"></a>
-<!--<a href="https://packagist.org/packages/babiphp/babiphp"><img src="https://img.shields.io/packagist/dt/babiphp/babiphp.svg?style=flat-square" alt="Total Downloads"></a>-->
-</p>
-
-<br>
+# BabiPHP
 
 ## Qu'est-ce que BabiPHP?
 
